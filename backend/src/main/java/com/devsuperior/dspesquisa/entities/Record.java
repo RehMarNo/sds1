@@ -63,7 +63,7 @@ public class Record implements Serializable {
     }
 
     public void setMoment(Instant moment) {
-        this.moment = moment;
+        this.moment = Instant.now();
     }
 
     public Game getGame() {
@@ -86,4 +86,5 @@ public class Record implements Serializable {
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }
